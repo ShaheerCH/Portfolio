@@ -519,19 +519,22 @@ p {
 }
 
 .Modal .grid-item .card-description p {
-  line-height: 32px;
+  line-height: 26px;
 }
 
 .Modal .Modal-close {
   width: 20px;
   position: absolute;
   right: 40px;
-  top: 7%;
+  top: 10%;
   cursor: pointer;
 }
 
 .Modal .show {
-  justify-content: space-around;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  gap: 10px;
 }
 
 .Modal .grid-item h2 {
@@ -544,6 +547,11 @@ p {
     background-color: #e5e5e5;
   }
 
+  .Modal .show {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+  }
   .menu-wrapper {
     width: 80%;
     margin: auto;
@@ -555,6 +563,7 @@ p {
 
   .Modal .card-image {
     margin: 36px 0;
+    padding: 290px;
   }
 
   .Modal .tags-wrapper {
@@ -567,6 +576,7 @@ p {
 
   .Modal .Modal-close {
     right: 120px;
+    top: 45px;
   }
 
   .project-cards .grid-item .project-role li {
