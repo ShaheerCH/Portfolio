@@ -28,3 +28,17 @@ const displayUserInfo = () => {
   }
 };
 displayUserInfo();
+const validation = (event) => {
+  const emailError = document.querySelector(".error");
+
+  if (userEmail.value === userEmail.value.toLowerCase()) {
+    saveUserInfo();
+    appForms.submit();
+  } else {
+    emailError.textContent = "Enter email in lowercase";
+    emailError.classList.add("show");
+    saveUserInfo();
+    event.preventDefault();
+  }
+};
+
