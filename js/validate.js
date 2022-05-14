@@ -28,6 +28,7 @@ const displayUserInfo = () => {
   }
 };
 displayUserInfo();
+
 const validation = (event) => {
   const emailError = document.querySelector(".error");
 
@@ -42,3 +43,4 @@ const validation = (event) => {
   }
 };
 
+appForms.addEventListener("submit", validation);
