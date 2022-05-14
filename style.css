@@ -552,6 +552,7 @@ p {
     display: flex;
     flex-direction: row;
   }
+  
   .menu-wrapper {
     width: 80%;
     margin: auto;
