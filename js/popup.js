@@ -177,7 +177,7 @@ const createProjectCard = (project, position = null, isDesktop = true) => {
     cardImage.style.backgroundImage = `url(${project.image})`;
     cardImage.style.backgroundRepeat = "no-repeat";
     cardImage.style.backgroundSize = "95%";
-    cardImage.style.backgroundPositionY = "-250px";
+    cardImage.style.backgroundPositionY = "0";
     cardImage.style.backgroundPositionX = "18px";
 
     cardImage.classList.remove("flex-item-2");
