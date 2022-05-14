@@ -279,3 +279,8 @@ const btnProjects = document.querySelectorAll(".btn-project");
 btnProjects.forEach((btnProject) => {
   btnProject.addEventListener("click", showPopupWindow);
 });
+const btnProjects = document.querySelectorAll(".btn-project");
+
+btnProjects.forEach((btnProject) => {
+  btnProject.addEventListener("click", showPopupWindow);
+});
