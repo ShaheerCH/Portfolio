@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="flex-container">
+        <div class="menu-wrapper">
+          <div class="logo">
+            <a href="/">My Logo</a>
+          </div>
+
+          <nav class="menu">
+            <div class="menu-icon toggle-menu">
+              <img src="Union.svg" alt="Hambuger Mobile Menu" />
+            </div>
+            <ul class="">
+              <li class="flex-row">
+                <span class="close-icon toggle-menu">
+                  <img src="close.svg" alt="Close menu icon" />
+                </span>
+              </li>
+              <li><a class="toggle-menu" href="#portfolio">Portfolio</a></li>
+              <li><a class="toggle-menu" href="#about">About</a></li>
+              <li><a class="toggle-menu" href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <section class="intro">
+        <div class="intro-section-bg">
+          <div class="bg-item-1"></div>
+          <div class="bg-item-2"></div>
+          <div class="bg-item-3"></div>
+          <div class="bg-item-4"></div>
+          <div class="bg-item-5"></div>
+        </div>
+        <div class="intro-content">
+          <h1 class="title">
+            I’m Shaheer <br />
+            Glad to see you!
+          </h1>
+          <p>
+            I’m a software developer! I can help you build a product , feature
+            or website Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+          <p class="purple-text">LET'S CONNECT</p>
+
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="twitter.svg" alt="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="linkedinicon.svg" alt="Linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Vector.svg" alt="Medium" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="github.svg" alt="Github" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Vector2.svg" alt="Angellist" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="intro-section-footer-bg">
+          <div class="bg-footer-item-1"></div>
+          <div class="bg-footer-item-2"></div>
+          <div class="bg-footer-item-3"></div>
+          <div class="bg-footer-item-4"></div>
+          <div class="bg-footer-item-5"></div>
+        </div>
+      </section>
+
+      <div class="grid-container project-cards" id="port"></div>
+
+      <section class="grid-container about-me" id="about">
+        <div class="grid-item">
+          <h2 class="title">
+            About <br />
+            Myself
+          </h2>
+          <p>
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+
+          <p class="purple-text">LET'S CONNECT</p>
+
+          <div class="social-icons">
+            <ul>
+              <li>
+                <a href="#">
+                  <img src="github.svg" alt="Github Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="linkedinicon.svg" alt="Linked In Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Vector2.svg" alt="Angellist Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="twitter.svg" alt="Twitter Logo" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="Vector.svg" alt="Medium Logo" />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn">Get my resume</a>
+        </div>
+        <div class="skills">
+          <ul class="menu">
+            <li class="open">
+              <a href="#">Languages</a>
+              <ul class="submenu">
+                <li>
+                  <a href="#"
+                    ><img src="js.svg" alt="JavaScript logo" />
+                    <span>JavaScript</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="html5.svg" alt="HTML5 logo" />
+                    <span>HTML</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="css.svg" alt="Css Logo" /> <span>CSS</span></a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="closed"><a href="#">Frameworks</a></li>
+            <li class="closed"><a href="#">Skills</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <footer class="flex-container contact-me" id="contact">
+        <div class="form-header-bg">
+          <div class="left-background-sprite"></div>
+          <div class="center-background-sprite"></div>
+        </div>
+        <div class="flex-item-row contact">
+          <h2 class="flex-item-row contact-title text-center">Contact me</h2>
+          <p class="flex-item-row contact-description text-center">
+            If you have an application you are interested in developing, a
+            feature that you need built or a project that needs coding. I’d love
+            to help with it
+          </p>
+
+          <form method="post" action="https://formspree.io/f/mqknglvd">
+            <div class="flex-item-row">
+              <label for="username">
+                <input
+                  type="text"
+                  name="username"
+                  id="username"
+                  value=""
+                  placeholder="Name"
+                  maxlength="30"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="flex-item-row">
+              <label for="email">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  value=""
+                  placeholder="Name@gmail.com"
+                  required
+                />
+              </label>
+            </div>
+
+            <div class="flex-item-row">
+              <label for="message">
+                <textarea
+                  name="message"
+                  id="message"
+                  maxlength="500"
+                  placeholder="Write your message here "
+                  required
+                ></textarea>
+              </label>
+            </div>
+            <div class="form-footer-bg">
+              <div></div>
+              <button class="btn btn-up" type="submit">Get In Touch</button>
+            </div>
+            <div class="circle-bg-item"></div>
+            <div class="poly-bg-item"></div>
+            <div class="error"></div>
+          </form>
+        </div>
+      </footer>
+    </main>
+
+    <div class="Modal"></div>
+    <script src="js/navbar.js"></script>
+    <script src="js/popup.js"></script>
+    <script src="js/validate.js"></script>
+  </body>
+</html>
