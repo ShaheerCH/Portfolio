@@ -244,4 +244,38 @@ const closePopup = () => {
   document.querySelector("body").classList.toggle("fixed");
 };
 
+const ModalCloseButton = () => {
+  const ModalCloseBtn = document.createElement("img");
+  ModalCloseBtn.className = "Modal-close";
+  ModalCloseBtn.src = "Modal-close.svg";
+  ModalCloseBtn.alt = "Close modal button";
 
+  ModalCloseBtn.addEventListener("click", closePopup);
+
+  return ModalCloseBtn;
+};
+
+function showPopupWindow() {
+  const position = parseInt(this.getAttribute("data-position"), 10);
+  const modalContent = createProjectCard(projects[position], false, false);
+
+  const Modal = document.querySelector(".Modal");
+  const ModalCloseBtn = ModalCloseButton();
+  const modalButtons = modalFooter(projects[position]);
+
+  Modal.innerHTML = "";
+
+  Modal.appendChild(modalContent);
+  const tagsWrapper = document.querySelector(".Modal .tags-wrapper");
+  tagsWrapper.appendChild(modalButtons);
+  Modal.childNodes[0].appendChild(ModalCloseBtn);
+
+  Modal.style.display = "flex";
+  document.querySelector("body").classList.toggle("fixed");
+}
+
+const btnProjects = document.querySelectorAll(".btn-project");
+
+btnProjects.forEach((btnProject) => {
+  btnProject.addEventListener("click", showPopupWindow);
+});
